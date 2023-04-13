@@ -2,12 +2,15 @@ html,
 body,
 #home{
     height: 100%;
+    overflow-x: hidden;
 }
 
 body{
     background: url(../imagens/capa.png),
                 url(../imagens/ruido.png),
-    linear-gradient(50deg, #41ffd6d5, #3d053aad) ;
+    linear-gradient(50deg, #ff4141d5, #648a74) ;
+    background-attachment: fixed;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 nav.bg-transparente{
@@ -62,4 +65,109 @@ nav.bg-transparente{
 .btn-branco:hover{
     background-color: white;
     color: black;
+}
+#servicos{
+    background-color: white;
+}
+#servicos h2,h3{
+    color:#3d053a;
+}
+.caixa{
+    padding: 20px, 0;
+    
+}
+#recursos{
+   color: white;
+}
+#recursos h2{
+   color:#50ad77;
+}
+#recursos h3{
+    color:#50ad77;
+}
+
+.albuns{
+    padding: 10px 0;
+}
+
+.rotacionar{
+    
+    transform: rotate(20deg);
+    padding-left: 80px;
+}
+
+footer{
+    background-color: black;
+    padding: 50px 0 20px 0;
+    position: relative;
+}
+footer h4{
+    color: #053d1e;
+    font-size: 0.8em;
+    text-transform: uppercase ;
+}
+footer .navbar-nav a{
+    color: white;
+    font-size: 0.8em;
+}
+footer .navbar-nav a:hover{
+    color: #3d053a;
+    text-decoration:none;
+}
+footer ul{
+    list-style: none;
+}
+footer ul li{
+    float: right;
+    margin: 0 5px;
+}
+h1{
+    font-weight: 900;
+    margin-bottom: 50px;
+    color: white;
+    letter-spacing: -0.05em;
+}
+h2{
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+h3{
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+/* responsividade celular antigo*/
+@media(max-width:575.98px){
+    .btn-custom{
+        margin: 10px 15px;
+        font-size: 1em;
+    }
+}
+/* responsividade celular modernos*/
+@media(min-width:576px) and (max-width:767.98px){
+    h1{
+        
+        font-size: 3em;
+    }
+    .btn-custom{
+        margin: 10px 15px;
+    }
+}
+/* responsividade tablets e pcs*/
+@media(min-width: 768px) and (max-width:991.98px){
+    h1{
+        font-size: 4em;
+    }
+}
+@media(min-width:992px)and (max-width:1199.98px){
+    h1{
+        font-size: 5em;
+    }
+}
+/*Telas de tv*/
+@media(min-width:1200px){
+    h1{
+        font-size: 6em;
+    }
 }
